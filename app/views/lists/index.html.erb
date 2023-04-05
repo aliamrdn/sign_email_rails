@@ -1,0 +1,48 @@
+
+
+<div class="app-container">
+  <div class="topnav">
+    <div class="logo-div">
+      <div class="topnav-logo-a">My</div>
+      <div class="topnav-logo-b">Basket</div>
+    </div>
+    <div class="topnav-heading"> My Lists</div>
+    <div class="topnav-heading"> Shared Lists</div>
+    <div class="topnav-heading">Favourite Items</div>
+  </div>
+
+  <div class="list-container">
+
+    <div class="items">
+
+      <div class="add-item">
+        <%= form_with url: "/add_item", html: { autocomplete: "off" }, method: :post do |form| %>
+          <%= form.text_field :item_name %>
+          <%= form.submit "Add", class: "button-add" %>
+        <% end %>
+      </div>
+
+      <div class="saved-items">
+        <% @items.each do |item| %>
+          <div class="saved-item">
+            <div class="item-text">
+              <%= item.properties['name'] %>
+            </div>
+            <div class="button-delete">
+            <i class="gg-trash" onclick="location.href='/delete_item?key_id=<%= item.key.id %>'"></i>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <button class="button-delete-all" onclick="location.href='/delete_list'">Delete List</button>
+  </div>
+
+
+  <div class="footer">
+    <div class="footer-label"><p>Terms</p></div>
+    <div class="footer-label"><p>Privacy</p></div>
+    <div class="footer-label"><p>License</p></div>
+  </div>
+
+</div>

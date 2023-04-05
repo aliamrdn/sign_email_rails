@@ -1,0 +1,95 @@
+.button-add {
+  font-family: 'Quicksand',sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFA451;
+  border-radius: 16px;
+  border-color:#FFA451;
+  background-color: white;
+  width: 90px;
+  height:45px;
+  margin-left: 10px;
+  border: 1px solid #cccccc;
+}
+
+.button-add:hover {
+  background-color: #FFA451;
+  color: white;
+  cursor: pointer;
+}
+
+.button-delete {
+  color: #FFA451;
+  margin-left: auto;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.button-delete:hover {
+  color: red;
+}
+.gg-trash {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 10px;
+  height: 12px;
+  border: 2px solid transparent;
+  box-shadow:
+    0 0 0 2px,
+    inset -2px 0 0,
+    inset 2px 0 0;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  margin-top: 4px
+}
+
+.gg-trash::after,
+.gg-trash::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute
+}
+
+.gg-trash::after {
+  background: currentColor;
+  border-radius: 3px;
+  width: 16px;
+  height: 2px;
+  top: -4px;
+  left: -5px
+}
+
+.gg-trash::before {
+  width: 10px;
+  height: 4px;
+  border: 2px solid;
+  border-bottom: transparent;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  top: -7px;
+  left: -2px
+}
+
+.button-delete-all {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  border-radius: 16px;
+  border-color:#FFA451;
+  background-color: #FFA451;
+  width: 551px;
+  height:45px;
+  margin-top: 10px;
+  /* margin-left: 10px; */
+  border: 1px solid #cccccc;
+}
+
+.button-delete-all:hover {
+  background-color: white;
+  color: #FFA451;
+  cursor: pointer;
+}

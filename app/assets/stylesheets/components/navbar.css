@@ -1,0 +1,53 @@
+.topnav {
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  height: 60px;
+}
+
+/* Style the links inside the navigation bar */
+
+.logo-div {
+  background-color: white;
+  float: left;
+  justify-content: space-between;
+}
+
+.topnav-logo-a {
+  float: left;
+  color: #FFA451;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.topnav-logo-b {
+  float: left;
+  color: #CEE5D0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.topnav-heading {
+  float: left;
+  color: #FFA451;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 18px;
+  padding-top: 20px;
+
+}
+
+/* Change the color of links on hover */
+.topnav :hover {
+  color: #ef9d82;
+}
